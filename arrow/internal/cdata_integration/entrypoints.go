@@ -25,11 +25,11 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/apache/arrow/go/v18/arrow/array"
-	"github.com/apache/arrow/go/v18/arrow/cdata"
-	"github.com/apache/arrow/go/v18/arrow/internal/arrjson"
-	"github.com/apache/arrow/go/v18/arrow/memory"
-	"github.com/apache/arrow/go/v18/internal/utils"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/cdata"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/arrjson"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/joe-at-startupmedia/go-arrow/internal/utils"
 )
 
 // #include <stdint.h>

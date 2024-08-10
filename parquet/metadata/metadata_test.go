@@ -21,9 +21,9 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/apache/arrow/go/v18/parquet"
-	"github.com/apache/arrow/go/v18/parquet/metadata"
-	"github.com/apache/arrow/go/v18/parquet/schema"
+	"github.com/joe-at-startupmedia/go-arrow/parquet"
+	"github.com/joe-at-startupmedia/go-arrow/parquet/metadata"
+	"github.com/joe-at-startupmedia/go-arrow/parquet/schema"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

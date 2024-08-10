@@ -22,10 +22,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/apache/arrow/go/v18/arrow/float16"
-	"github.com/apache/arrow/go/v18/internal/utils"
-	"github.com/apache/arrow/go/v18/parquet"
-	format "github.com/apache/arrow/go/v18/parquet/internal/gen-go/parquet"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/float16"
+	"github.com/joe-at-startupmedia/go-arrow/internal/utils"
+	"github.com/joe-at-startupmedia/go-arrow/parquet"
+	format "github.com/joe-at-startupmedia/go-arrow/parquet/internal/gen-go/parquet"
 )
 
 type taggedInfo struct {

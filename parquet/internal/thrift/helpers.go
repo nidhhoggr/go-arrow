@@ -23,8 +23,8 @@ import (
 	"context"
 	"io"
 
-	"github.com/apache/arrow/go/v18/parquet/internal/encryption"
 	"github.com/apache/thrift/lib/go/thrift"
+	"github.com/joe-at-startupmedia/go-arrow/parquet/internal/encryption"
 )
 
 // default factory for creating thrift protocols for serialization/deserialization

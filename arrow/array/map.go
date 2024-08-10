@@ -20,9 +20,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/apache/arrow/go/v18/arrow"
-	"github.com/apache/arrow/go/v18/arrow/memory"
-	"github.com/apache/arrow/go/v18/internal/json"
+	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/joe-at-startupmedia/go-arrow/internal/json"
 )
 
 // Map represents an immutable sequence of Key/Value structs. It is a

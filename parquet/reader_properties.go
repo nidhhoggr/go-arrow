@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/apache/arrow/go/v18/arrow/memory"
-	"github.com/apache/arrow/go/v18/internal/utils"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/joe-at-startupmedia/go-arrow/internal/utils"
 )
 
 // ReaderProperties are used to define how the file reader will handle buffering and allocating buffers

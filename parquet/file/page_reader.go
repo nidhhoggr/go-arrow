@@ -23,13 +23,13 @@ import (
 	"sync"
 
 	"github.com/JohnCGriffin/overflow"
-	"github.com/apache/arrow/go/v18/arrow/memory"
-	"github.com/apache/arrow/go/v18/parquet"
-	"github.com/apache/arrow/go/v18/parquet/compress"
-	"github.com/apache/arrow/go/v18/parquet/internal/encryption"
-	format "github.com/apache/arrow/go/v18/parquet/internal/gen-go/parquet"
-	"github.com/apache/arrow/go/v18/parquet/internal/thrift"
-	"github.com/apache/arrow/go/v18/parquet/metadata"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/joe-at-startupmedia/go-arrow/parquet"
+	"github.com/joe-at-startupmedia/go-arrow/parquet/compress"
+	"github.com/joe-at-startupmedia/go-arrow/parquet/internal/encryption"
+	format "github.com/joe-at-startupmedia/go-arrow/parquet/internal/gen-go/parquet"
+	"github.com/joe-at-startupmedia/go-arrow/parquet/internal/thrift"
+	"github.com/joe-at-startupmedia/go-arrow/parquet/metadata"
 	"golang.org/x/xerrors"
 )
 

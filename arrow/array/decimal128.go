@@ -24,12 +24,12 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/apache/arrow/go/v18/arrow"
-	"github.com/apache/arrow/go/v18/arrow/bitutil"
-	"github.com/apache/arrow/go/v18/arrow/decimal128"
-	"github.com/apache/arrow/go/v18/arrow/internal/debug"
-	"github.com/apache/arrow/go/v18/arrow/memory"
-	"github.com/apache/arrow/go/v18/internal/json"
+	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/bitutil"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/decimal128"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/joe-at-startupmedia/go-arrow/internal/json"
 )
 
 // A type which represents an immutable sequence of 128-bit decimal values.

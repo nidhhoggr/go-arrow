@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/apache/arrow/go/v18/arrow"
-	"github.com/apache/arrow/go/v18/arrow/array"
-	"github.com/apache/arrow/go/v18/arrow/arrio"
-	"github.com/apache/arrow/go/v18/arrow/internal/dictutils"
-	"github.com/apache/arrow/go/v18/internal/json"
+	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/arrio"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/dictutils"
+	"github.com/joe-at-startupmedia/go-arrow/internal/json"
 )
 
 const (

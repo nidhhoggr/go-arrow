@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"math/bits"
 
-	"github.com/apache/arrow/go/v18/arrow"
-	"github.com/apache/arrow/go/v18/arrow/array"
-	"github.com/apache/arrow/go/v18/arrow/memory"
+	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
 )
 
 // swap the endianness of the array's buffers as needed in-place to save

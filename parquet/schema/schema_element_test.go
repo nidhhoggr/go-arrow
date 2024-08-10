@@ -19,8 +19,8 @@ package schema
 import (
 	"testing"
 
-	"github.com/apache/arrow/go/v18/parquet"
-	format "github.com/apache/arrow/go/v18/parquet/internal/gen-go/parquet"
+	"github.com/joe-at-startupmedia/go-arrow/parquet"
+	format "github.com/joe-at-startupmedia/go-arrow/parquet/internal/gen-go/parquet"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )

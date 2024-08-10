@@ -24,8 +24,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/apache/arrow/go/v18/arrow"
-	"github.com/apache/arrow/go/v18/internal/json"
+	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/joe-at-startupmedia/go-arrow/internal/json"
 )
 
 // A type which represents an immutable sequence of int64 values.

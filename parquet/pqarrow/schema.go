@@ -1168,3 +1168,4 @@ func FromParquet(sc *schema.Schema, props *ArrowReadProperties, kv metadata.KeyV
 	}
 	return arrow.NewSchema(fields, manifest.SchemaMeta), nil
 }
+                                                                                 

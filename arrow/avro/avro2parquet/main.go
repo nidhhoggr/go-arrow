@@ -26,10 +26,10 @@ import (
 	"runtime/pprof"
 	"time"
 
-	"github.com/apache/arrow/go/v18/arrow/avro"
-	"github.com/apache/arrow/go/v18/parquet"
-	"github.com/apache/arrow/go/v18/parquet/compress"
-	pq "github.com/apache/arrow/go/v18/parquet/pqarrow"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/avro"
+	"github.com/joe-at-startupmedia/go-arrow/parquet"
+	"github.com/joe-at-startupmedia/go-arrow/parquet/compress"
+	pq "github.com/joe-at-startupmedia/go-arrow/parquet/pqarrow"
 )
 
 var (

@@ -22,9 +22,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/apache/arrow/go/v18/arrow/float16"
-	"github.com/apache/arrow/go/v18/parquet"
-	"github.com/apache/arrow/go/v18/parquet/schema"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/float16"
+	"github.com/joe-at-startupmedia/go-arrow/parquet"
+	"github.com/joe-at-startupmedia/go-arrow/parquet/schema"
 	"github.com/stretchr/testify/assert"
 )
 

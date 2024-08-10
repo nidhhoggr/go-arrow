@@ -19,10 +19,10 @@ package array_test
 import (
 	"testing"
 
-	"github.com/apache/arrow/go/v18/arrow"
-	"github.com/apache/arrow/go/v18/arrow/array"
-	"github.com/apache/arrow/go/v18/arrow/decimal256"
-	"github.com/apache/arrow/go/v18/arrow/memory"
+	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/decimal256"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
 	"github.com/stretchr/testify/assert"
 )
 

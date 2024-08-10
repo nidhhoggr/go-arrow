@@ -19,8 +19,8 @@ package arrow
 import (
 	"unsafe"
 
-	"github.com/apache/arrow/go/v18/arrow/decimal128"
-	"github.com/apache/arrow/go/v18/arrow/endian"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/decimal128"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/endian"
 )
 
 // Decimal128 traits

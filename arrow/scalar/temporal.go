@@ -22,7 +22,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/apache/arrow/go/v18/arrow"
+	"github.com/joe-at-startupmedia/go-arrow/arrow"
 )
 
 func temporalToString(s TemporalScalar) string {

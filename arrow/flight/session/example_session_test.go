@@ -19,10 +19,10 @@ package session_test
 import (
 	"log"
 
-	"github.com/apache/arrow/go/v18/arrow/flight"
-	"github.com/apache/arrow/go/v18/arrow/flight/flightsql"
-	"github.com/apache/arrow/go/v18/arrow/flight/session"
 	"github.com/google/uuid"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/flight"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/flight/flightsql"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/flight/session"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

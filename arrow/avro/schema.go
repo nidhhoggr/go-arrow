@@ -22,11 +22,11 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/apache/arrow/go/v18/arrow"
-	"github.com/apache/arrow/go/v18/arrow/decimal128"
-	"github.com/apache/arrow/go/v18/internal/types"
-	"github.com/apache/arrow/go/v18/internal/utils"
 	avro "github.com/hamba/avro/v2"
+	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/decimal128"
+	"github.com/joe-at-startupmedia/go-arrow/internal/types"
+	"github.com/joe-at-startupmedia/go-arrow/internal/utils"
 )
 
 type schemaNode struct {

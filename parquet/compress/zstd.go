@@ -20,7 +20,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/apache/arrow/go/v18/parquet/internal/debug"
+	"github.com/joe-at-startupmedia/go-arrow/parquet/internal/debug"
 	"github.com/klauspost/compress/zstd"
 )
 

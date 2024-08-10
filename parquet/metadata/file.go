@@ -24,12 +24,12 @@ import (
 	"reflect"
 	"unicode/utf8"
 
-	"github.com/apache/arrow/go/v18/parquet"
-	"github.com/apache/arrow/go/v18/parquet/compress"
-	"github.com/apache/arrow/go/v18/parquet/internal/encryption"
-	format "github.com/apache/arrow/go/v18/parquet/internal/gen-go/parquet"
-	"github.com/apache/arrow/go/v18/parquet/internal/thrift"
-	"github.com/apache/arrow/go/v18/parquet/schema"
+	"github.com/joe-at-startupmedia/go-arrow/parquet"
+	"github.com/joe-at-startupmedia/go-arrow/parquet/compress"
+	"github.com/joe-at-startupmedia/go-arrow/parquet/internal/encryption"
+	format "github.com/joe-at-startupmedia/go-arrow/parquet/internal/gen-go/parquet"
+	"github.com/joe-at-startupmedia/go-arrow/parquet/internal/thrift"
+	"github.com/joe-at-startupmedia/go-arrow/parquet/schema"
 	"golang.org/x/xerrors"
 )
 

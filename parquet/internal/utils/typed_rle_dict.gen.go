@@ -1375,3 +1375,4 @@ func (r *RleDecoder) GetBatchWithDictFixedLenByteArray(dc DictionaryConverter, v
 
 	return read, nil
 }
+                           

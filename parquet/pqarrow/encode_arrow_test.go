@@ -2232,3 +2232,4 @@ func TestEmptyListDeltaBinaryPacked(t *testing.T) {
 	assert.True(t, schema.Equal(tbl.Schema()))
 	assert.EqualValues(t, 1, tbl.NumRows())
 }
+                                                                                                                                                

@@ -27,9 +27,9 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/apache/arrow/go/v18/arrow/flight"
-	"github.com/apache/arrow/go/v18/arrow/flight/flightsql"
-	"github.com/apache/arrow/go/v18/arrow/flight/flightsql/example"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/flight"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/flight/flightsql"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/flight/flightsql/example"
 )
 
 func main() {

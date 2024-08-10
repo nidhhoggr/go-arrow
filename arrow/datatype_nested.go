@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/apache/arrow/go/v18/arrow/internal/debug"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
 )
 
 type (

@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/apache/arrow/go/v18/arrow"
 	hamba "github.com/hamba/avro/v2"
+	"github.com/joe-at-startupmedia/go-arrow/arrow"
 )
 
 func TestSchemaStringEqual(t *testing.T) {

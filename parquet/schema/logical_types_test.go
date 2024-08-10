@@ -570,3 +570,4 @@ func TestNodeFactoryEquivalences(t *testing.T) {
 	assert.NoError(t, err)
 	assert.True(t, fromConverted.Equals(fromLogical))
 }
+                           

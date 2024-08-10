@@ -19,7 +19,7 @@ package utils
 import (
 	"errors"
 
-	"github.com/apache/arrow/go/v18/arrow"
+	"github.com/joe-at-startupmedia/go-arrow/arrow"
 )
 
 //go:generate go run ../../arrow/_tools/tmpl -i -data=transpose_ints.tmpldata -d arch=avx2 transpose_ints_simd.go.tmpl=transpose_ints_avx2_amd64.go

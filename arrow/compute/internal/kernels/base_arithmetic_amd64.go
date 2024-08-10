@@ -21,9 +21,9 @@ package kernels
 import (
 	"unsafe"
 
-	"github.com/apache/arrow/go/v18/arrow"
-	"github.com/apache/arrow/go/v18/arrow/compute/exec"
-	"github.com/apache/arrow/go/v18/arrow/internal/debug"
+	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/compute/exec"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
 	"golang.org/x/exp/constraints"
 	"golang.org/x/sys/cpu"
 )

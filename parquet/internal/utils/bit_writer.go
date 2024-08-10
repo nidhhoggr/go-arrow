@@ -21,7 +21,7 @@ import (
 	"io"
 	"log"
 
-	"github.com/apache/arrow/go/v18/arrow/bitutil"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/bitutil"
 )
 
 // WriterAtBuffer is a convenience struct for providing a WriteAt function

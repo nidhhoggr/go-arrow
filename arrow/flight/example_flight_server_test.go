@@ -23,7 +23,7 @@ import (
 	"io"
 	"log"
 
-	"github.com/apache/arrow/go/v18/arrow/flight"
+	"github.com/joe-at-startupmedia/go-arrow/arrow/flight"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials/insecure"

@@ -28,7 +28,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/apache/arrow/go/v18/internal/json"
+	"github.com/joe-at-startupmedia/go-arrow/internal/json"
 )
 
 const Ext = ".tmpl"

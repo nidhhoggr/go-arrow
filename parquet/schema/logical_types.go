@@ -1190,3 +1190,4 @@ func (NoLogicalType) Equals(rhs LogicalType) bool {
 }
 
 func (NoLogicalType) IsNone() bool { return true }
+                                    
