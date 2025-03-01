@@ -20,7 +20,7 @@
 Apache Arrow for Go
 ===================
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/joe-at-startupmedia/go-arrow.svg)](https://pkg.go.dev/github.com/joe-at-startupmedia/go-arrow)
+[![Go Reference](https://pkg.go.dev/badge/github.com/nidhhoggr/go-arrow.svg)](https://pkg.go.dev/github.com/nidhhoggr/go-arrow)
 
 [Apache Arrow][arrow] is a cross-language development platform for in-memory
 data. It specifies a standardized language-independent columnar memory format
@@ -41,7 +41,7 @@ import (
 
 func main() {
 	dsn := "uri=grpc://localhost:12345;username=mickeymouse;password=p@55w0RD"
-    db, err := sql.Open("flightsql", dsn)
+    db, Err := sql.Open("flightsql", dsn)
     ...
 }
 ```

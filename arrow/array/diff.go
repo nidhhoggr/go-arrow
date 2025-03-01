@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow"
 )
 
 // Edit represents one entry in the edit script to compare two arrays.

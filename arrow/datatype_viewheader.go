@@ -20,9 +20,9 @@ import (
 	"bytes"
 	"unsafe"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/endian"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/arrow/endian"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/debug"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
 )
 
 const (

@@ -19,7 +19,7 @@ package arrow
 import (
 	"unsafe"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/endian"
+	"github.com/nidhhoggr/go-arrow/arrow/endian"
 )
 
 var TimestampTraits timestampTraits

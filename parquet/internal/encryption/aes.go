@@ -29,7 +29,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/joe-at-startupmedia/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet"
 )
 
 // important constants for handling the aes encryption

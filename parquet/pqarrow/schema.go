@@ -22,15 +22,15 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/apache/arrow/go/v18/arrow"
-	"github.com/apache/arrow/go/v18/arrow/decimal128"
-	"github.com/apache/arrow/go/v18/arrow/flight"
-	"github.com/apache/arrow/go/v18/arrow/ipc"
-	"github.com/apache/arrow/go/v18/arrow/memory"
-	"github.com/apache/arrow/go/v18/parquet"
-	"github.com/apache/arrow/go/v18/parquet/file"
-	"github.com/apache/arrow/go/v18/parquet/metadata"
-	"github.com/apache/arrow/go/v18/parquet/schema"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/decimal128"
+	"github.com/nidhhoggr/go-arrow/arrow/flight"
+	"github.com/nidhhoggr/go-arrow/arrow/ipc"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet/file"
+	"github.com/nidhhoggr/go-arrow/parquet/metadata"
+	"github.com/nidhhoggr/go-arrow/parquet/schema"
 	"golang.org/x/xerrors"
 )
 
@@ -1168,4 +1168,3 @@ func FromParquet(sc *schema.Schema, props *ArrowReadProperties, kv metadata.KeyV
 	}
 	return arrow.NewSchema(fields, manifest.SchemaMeta), nil
 }
-                                                                                 

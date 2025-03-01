@@ -19,7 +19,7 @@
 package tensor
 
 import (
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow"
 )
 
 // Int8 is an n-dim array of int8s.

@@ -22,10 +22,10 @@ package example
 import (
 	"strings"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/flight/flightsql/schema_ref"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/flight/flightsql/schema_ref"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
 )
 
 func GetTypeInfoResult(mem memory.Allocator) arrow.Record {

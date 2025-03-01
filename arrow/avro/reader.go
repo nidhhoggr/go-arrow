@@ -24,10 +24,10 @@ import (
 	"sync/atomic"
 
 	"github.com/hamba/avro/v2/ocf"
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/debug"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
 	"github.com/tidwall/sjson"
 
 	avro "github.com/hamba/avro/v2"

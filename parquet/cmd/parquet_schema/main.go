@@ -21,8 +21,8 @@ import (
 	"os"
 
 	"github.com/docopt/docopt-go"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/file"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/schema"
+	"github.com/nidhhoggr/go-arrow/parquet/file"
+	"github.com/nidhhoggr/go-arrow/parquet/schema"
 )
 
 const usage = `Parquet Schema Dumper.

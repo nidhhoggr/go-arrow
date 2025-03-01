@@ -21,13 +21,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/joe-at-startupmedia/go-arrow/parquet"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/schema"
+	"github.com/nidhhoggr/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet/schema"
 )
 
 var (
 	// Regular expression for the version format
-	// major . minor . patch unknown - prerelease.x + build info
+	// major . minor . patch unknown - Prerelease.x + build info
 	// Eg: 1.5.0ab-cdh5.5.0+cd
 	versionRx = regexp.MustCompile(`^(\d+)\.(\d+)\.(\d+)([^-+]*)?(?:-([^+]*))?(?:\+(.*))?$`)
 	// Regular expression for the application format
@@ -56,7 +56,7 @@ type AppVersion struct {
 		Minor      int
 		Patch      int
 		Unknown    string
-		PreRelease string
+		Prerelease string
 		BuildInfo  string
 	}
 }
@@ -73,7 +73,7 @@ func NewAppVersionExplicit(app string, major, minor, patch int) *AppVersion {
 
 // NewAppVersion parses a "created by" string such as "parquet-go 1.0.0".
 //
-// It also supports handling pre-releases and build info such as
+// It also supports handling prereleases and build info such as
 //
 //	parquet-cpp version 1.5.0ab-xyz5.5.0+cd (build abcd)
 func NewAppVersion(createdby string) *AppVersion {
@@ -95,7 +95,7 @@ func NewAppVersion(createdby string) *AppVersion {
 		v.Version.Minor, _ = strconv.Atoi(ver[2])
 		v.Version.Patch, _ = strconv.Atoi(ver[3])
 		v.Version.Unknown = ver[4]
-		v.Version.PreRelease = ver[5]
+		v.Version.Prerelease = ver[5]
 		v.Version.BuildInfo = ver[6]
 	}
 	return v
@@ -108,7 +108,7 @@ func NewAppVersion(createdby string) *AppVersion {
 // the major versions first, then the minor versions, and finally the patch
 // versions.
 //
-// Pre-release and build info are not considered.
+// Prerelease and build info are not considered.
 func (v AppVersion) LessThan(other *AppVersion) bool {
 	switch {
 	case v.App != other.App:
@@ -128,7 +128,7 @@ func (v AppVersion) LessThan(other *AppVersion) bool {
 
 // Equal only compares the Application and major/minor/patch versions.
 //
-// Pre-release and build info are not considered.
+// Prerelease and build info are not considered.
 func (v AppVersion) Equal(other *AppVersion) bool {
 	return v.App == other.App &&
 		v.Version.Major == other.Version.Major &&

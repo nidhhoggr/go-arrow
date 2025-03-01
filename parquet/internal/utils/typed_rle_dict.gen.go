@@ -19,9 +19,9 @@
 package utils
 
 import (
-	"github.com/apache/arrow/go/v18/internal/bitutils"
-	"github.com/apache/arrow/go/v18/internal/utils"
-	"github.com/apache/arrow/go/v18/parquet"
+	"github.com/nidhhoggr/go-arrow/internal/bitutils"
+	"github.com/nidhhoggr/go-arrow/internal/utils"
+	"github.com/nidhhoggr/go-arrow/parquet"
 	"golang.org/x/xerrors"
 )
 
@@ -1375,4 +1375,3 @@ func (r *RleDecoder) GetBatchWithDictFixedLenByteArray(dc DictionaryConverter, v
 
 	return read, nil
 }
-                           

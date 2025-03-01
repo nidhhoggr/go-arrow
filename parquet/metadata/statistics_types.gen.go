@@ -22,15 +22,15 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/apache/arrow/go/v18/arrow"
-	"github.com/apache/arrow/go/v18/arrow/array"
-	"github.com/apache/arrow/go/v18/arrow/float16"
-	"github.com/apache/arrow/go/v18/arrow/memory"
-	"github.com/apache/arrow/go/v18/internal/bitutils"
-	shared_utils "github.com/apache/arrow/go/v18/internal/utils"
-	"github.com/apache/arrow/go/v18/parquet"
-	"github.com/apache/arrow/go/v18/parquet/internal/encoding"
-	"github.com/apache/arrow/go/v18/parquet/schema"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/float16"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/internal/bitutils"
+	shared_utils "github.com/nidhhoggr/go-arrow/internal/utils"
+	"github.com/nidhhoggr/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet/internal/encoding"
+	"github.com/nidhhoggr/go-arrow/parquet/schema"
 )
 
 type minmaxPairInt32 [2]int32
@@ -2740,4 +2740,3 @@ func NewStatisticsFromEncoded(descr *schema.Column, mem memory.Allocator, nvalue
 		panic("not implemented")
 	}
 }
-                                                                                 

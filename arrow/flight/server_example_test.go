@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/flight"
+	"github.com/nidhhoggr/go-arrow/arrow/flight"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/health"

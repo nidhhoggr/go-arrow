@@ -23,11 +23,11 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/flatbuf"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/ipc"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/flatbuf"
+	"github.com/nidhhoggr/go-arrow/arrow/ipc"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
 )
 
 // CheckArrowFile checks whether a given ARROW file contains the expected list of records.

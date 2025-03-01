@@ -17,8 +17,8 @@
 package parquet
 
 import (
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/compress"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/parquet/compress"
 )
 
 // Constants for default property values used for the default reader, writer and column props.

@@ -22,10 +22,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/compute/exec"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/compute/internal/kernels"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/compute/exec"
+	"github.com/nidhhoggr/go-arrow/arrow/compute/internal/kernels"
 	"golang.org/x/sync/errgroup"
 )
 

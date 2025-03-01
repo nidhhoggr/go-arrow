@@ -44,11 +44,11 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/endian"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/ipc"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/endian"
+	"github.com/nidhhoggr/go-arrow/arrow/internal"
+	"github.com/nidhhoggr/go-arrow/arrow/ipc"
 )
 
 func encodeCMetadata(keys, values []string) []byte {

@@ -23,10 +23,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/arrdata"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/ipc"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/arrdata"
+	"github.com/nidhhoggr/go-arrow/arrow/ipc"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
 )
 
 func TestLsStream(t *testing.T) {

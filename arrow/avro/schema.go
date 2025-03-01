@@ -23,10 +23,10 @@ import (
 	"strconv"
 
 	avro "github.com/hamba/avro/v2"
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/decimal128"
-	"github.com/joe-at-startupmedia/go-arrow/internal/types"
-	"github.com/joe-at-startupmedia/go-arrow/internal/utils"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/decimal128"
+	"github.com/nidhhoggr/go-arrow/internal/types"
+	"github.com/nidhhoggr/go-arrow/internal/utils"
 )
 
 type schemaNode struct {

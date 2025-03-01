@@ -19,7 +19,7 @@ package memory
 import (
 	"sync/atomic"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/debug"
 )
 
 // Buffer is a wrapper type for a buffer of bytes.

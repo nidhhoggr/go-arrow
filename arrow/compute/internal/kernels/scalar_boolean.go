@@ -19,9 +19,9 @@
 package kernels
 
 import (
-	"github.com/joe-at-startupmedia/go-arrow/arrow/bitutil"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/compute/exec"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/scalar"
+	"github.com/nidhhoggr/go-arrow/arrow/bitutil"
+	"github.com/nidhhoggr/go-arrow/arrow/compute/exec"
+	"github.com/nidhhoggr/go-arrow/arrow/scalar"
 )
 
 type computeWordFN func(leftTrue, leftFalse, rightTrue, rightFalse uint64) (outValid, outData uint64)

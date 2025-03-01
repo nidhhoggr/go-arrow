@@ -22,12 +22,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/bitutil"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/compute/exec"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/scalar"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/bitutil"
+	"github.com/nidhhoggr/go-arrow/arrow/compute/exec"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/debug"
+	"github.com/nidhhoggr/go-arrow/arrow/scalar"
 	"github.com/stretchr/testify/suite"
 )
 

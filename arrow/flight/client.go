@@ -26,7 +26,7 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/flight/gen/flight"
+	"github.com/nidhhoggr/go-arrow/arrow/flight/gen/flight"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/metadata"

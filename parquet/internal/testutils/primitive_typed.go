@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
-	"github.com/joe-at-startupmedia/go-arrow/parquet"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/file"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/metadata"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/schema"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet/file"
+	"github.com/nidhhoggr/go-arrow/parquet/metadata"
+	"github.com/nidhhoggr/go-arrow/parquet/schema"
 )
 
 type PrimitiveTypedTest struct {

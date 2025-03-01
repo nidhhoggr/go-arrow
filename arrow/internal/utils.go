@@ -17,8 +17,8 @@
 package internal
 
 import (
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/flatbuf"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/flatbuf"
 )
 
 const CurMetadataVersion = flatbuf.MetadataVersionV5

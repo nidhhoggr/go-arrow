@@ -23,13 +23,13 @@ import (
 	"math/bits"
 	"unsafe"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/bitutil"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/encoded"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
-	"github.com/joe-at-startupmedia/go-arrow/internal/bitutils"
-	"github.com/joe-at-startupmedia/go-arrow/internal/utils"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/bitutil"
+	"github.com/nidhhoggr/go-arrow/arrow/encoded"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/debug"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/internal/bitutils"
+	"github.com/nidhhoggr/go-arrow/internal/utils"
 )
 
 // Concatenate creates a new arrow.Array which is the concatenation of the

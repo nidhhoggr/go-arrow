@@ -19,9 +19,9 @@ package ipc
 import (
 	"io"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/flatbuf"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/debug"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/flatbuf"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
 	"github.com/klauspost/compress/zstd"
 	"github.com/pierrec/lz4/v4"
 )

@@ -17,8 +17,8 @@
 package file
 
 import (
-    "github.com/joe-at-startupmedia/go-arrow/parquet"
-    "github.com/joe-at-startupmedia/go-arrow/parquet/internal/encoding"
+    "github.com/nidhhoggr/go-arrow/parquet"
+    "github.com/nidhhoggr/go-arrow/parquet/internal/encoding"
 )
 
 {{range .In}}
@@ -30,10 +30,10 @@ type {{.Name}}ColumnChunkReader struct {
 
 // Skip skips the next nvalues so that the next call to ReadBatch
 // will start reading *after* the skipped values.
-func (cr *{{.Name}}ColumnChunkReader) Skip(nvalues int64) (int64, error) {
+func (cr *{{.Name}}ColumnChunkReader) Skip(nvalues int64) (int64, Err) {
   return cr.columnChunkReader.skipValues(nvalues,
-    func(batch int64, buf []byte) (int64, error) {
-      vals, _, err := cr.ReadBatch(batch,
+    func(batch int64, buf []byte) (int64, Err) {
+      vals, _, Err := cr.ReadBatch(batch,
         {{- if ne .Name "Boolean"}}
         {{.prefix}}.{{.Name}}Traits.CastFromBytes(buf),
         arrow.Int16Traits.CastFromBytes(buf),
@@ -43,21 +43,21 @@ func (cr *{{.Name}}ColumnChunkReader) Skip(nvalues int64) (int64, error) {
         nil,
         nil)
         {{- end}}
-      return vals, err
+      return vals, Err
     })
 }
 
 // ReadBatch reads batchSize values from the column.
 //
-// Returns error if values is not at least big enough to hold the number of values that will be read.
+// Returns Err if values is not at least big enough to hold the number of values that will be read.
 //
 // defLvls and repLvls can be nil, or will be populated if not nil. If not nil, they must be
 // at least large enough to hold the number of values that will be read.
 //
 // total is the number of rows that were read, valuesRead is the actual number of physical values
 // that were read excluding nulls
-func (cr *{{.Name}}ColumnChunkReader) ReadBatch(batchSize int64, values []{{.name}}, defLvls, repLvls []int16) (total int64, valuesRead int, err error) {
-  return cr.readBatch(batchSize, defLvls, repLvls, func(start, len int64) (int, error) {
+func (cr *{{.Name}}ColumnChunkReader) ReadBatch(batchSize int64, values []{{.name}}, defLvls, repLvls []int16) (total int64, valuesRead int, Err Err) {
+  return cr.readBatch(batchSize, defLvls, repLvls, func(start, len int64) (int, Err) {
     return cr.curDecoder.(encoding.{{.Name}}Decoder).Decode(values[start:start+len])
   })
 }

@@ -21,13 +21,13 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/arrio"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/ipc"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
-	"github.com/joe-at-startupmedia/go-arrow/internal/utils"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/arrio"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/debug"
+	"github.com/nidhhoggr/go-arrow/arrow/ipc"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/internal/utils"
 )
 
 // DataStreamReader is an interface for receiving flight data messages on a stream

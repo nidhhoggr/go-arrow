@@ -21,9 +21,9 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/joe-at-startupmedia/go-arrow/parquet"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/metadata"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/schema"
+	"github.com/nidhhoggr/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet/metadata"
+	"github.com/nidhhoggr/go-arrow/parquet/schema"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -331,7 +331,7 @@ func TestApplicationVersion(t *testing.T) {
 	assert.Equal(t, 5, version4.Version.Minor)
 	assert.Equal(t, 0, version4.Version.Patch)
 	assert.Equal(t, "ab", version4.Version.Unknown)
-	assert.Equal(t, "cdh5.5.0", version4.Version.PreRelease)
+	assert.Equal(t, "cdh5.5.0", version4.Version.Prerelease)
 	assert.Equal(t, "cd", version4.Version.BuildInfo)
 
 	assert.Equal(t, "parquet-mr", version5.App)

@@ -22,8 +22,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/bitutil"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/internal/utils"
+	"github.com/nidhhoggr/go-arrow/arrow/bitutil"
+	"github.com/nidhhoggr/go-arrow/parquet/internal/utils"
 	"github.com/stretchr/testify/suite"
 )
 

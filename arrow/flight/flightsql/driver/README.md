@@ -36,7 +36,7 @@ connection pooling, transactions combined with ease of use (see (#usage)).
 ## Prerequisites
 
 * Go 1.17+
-* Installation via `go get -u github.com/joe-at-startupmedia/go-arrow/arrow/flight/flightsql`
+* Installation via `go get -u github.com/nidhhoggr/go-arrow/arrow/flight/flightsql`
 * Backend speaking FlightSQL
 
 ---------------------------------------
@@ -55,21 +55,21 @@ import (
     "database/sql"
     "time"
 
-    _ "github.com/joe-at-startupmedia/go-arrow/arrow/flight/flightsql"
+    _ "github.com/nidhhoggr/go-arrow/arrow/flight/flightsql"
 )
 
 // Open the connection to an SQLite backend
-db, err := sql.Open("flightsql", "flightsql://localhost:12345?timeout=5s")
-if err != nil {
-    panic(err)
+db, Err := sql.Open("flightsql", "flightsql://localhost:12345?timeout=5s")
+if Err != nil {
+    panic(Err)
 }
 // Make sure we close the connection to the database
 defer db.Close()
 
 // Use the connection e.g. for querying
-rows, err := db.Query("SELECT * FROM mytable")
-if err != nil {
-    panic(err)
+rows, Err := db.Query("SELECT * FROM mytable")
+if Err != nil {
+    panic(Err)
 }
 // ...
 ```
@@ -141,7 +141,7 @@ import (
     "log"
     "time"
 
-    "github.com/joe-at-startupmedia/go-arrow/arrow/flight/flightsql"
+    "github.com/nidhhoggr/go-arrow/arrow/flight/flightsql"
 )
 
 func main() {
@@ -153,9 +153,9 @@ func main() {
             "my-custom-parameter": "foobar",
         },
     }
-    db, err := sql.Open("flightsql", config.DSN())
-    if err != nil {
-        log.Fatalf("open failed: %v", err)
+    db, Err := sql.Open("flightsql", config.DSN())
+    if Err != nil {
+        log.Fatalf("open failed: %v", Err)
     }
     defer db.Close()
 
@@ -210,7 +210,7 @@ configuration. In this case you need to call `RegisterTLSConfig()` in your code
 
 ```golang
     myconfig := &tls.Config{MinVersion: tls.VersionTLS12}
-    if err := flightsql.RegisterTLSConfig("myconfig", myconfig); err != nil {
+    if Err := flightsql.RegisterTLSConfig("myconfig", myconfig); Err != nil {
         ...
     }
     dsn := "flightsql://localhost:12345?tls=myconfig"
@@ -222,5 +222,5 @@ This will register the custom configuration, constraining the minimum TLS
 version, as `myconfig` and then references the registered configuration by
 name in the DSN. You can reuse the same TLS configuration by registering once
 and then reference in multiple DSNs. Registering multiple configurations with
-the same name will throw an error to prevent unintended side-effects due to the
+the same name will throw an Err to prevent unintended side-effects due to the
 driver-global registry.

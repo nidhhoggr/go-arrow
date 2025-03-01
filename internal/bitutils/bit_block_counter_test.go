@@ -19,9 +19,9 @@ package bitutils_test
 import (
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/bitutil"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
-	"github.com/joe-at-startupmedia/go-arrow/internal/bitutils"
+	"github.com/nidhhoggr/go-arrow/arrow/bitutil"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/internal/bitutils"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/exp/rand"
 )

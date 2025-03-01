@@ -22,7 +22,7 @@ package file
 import (
 	"errors"
 
-	"github.com/joe-at-startupmedia/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet"
 )
 
 func mmapOpen(filename string) (parquet.ReaderAtSeeker, error) {

@@ -30,9 +30,9 @@
 //
 // You can download the library and cli utilities via:
 //
-//	go get -u github.com/joe-at-startupmedia/go-arrow/parquet
-//	go install github.com/joe-at-startupmedia/go-arrow/parquet/cmd/parquet_reader@latest
-//	go install github.com/joe-at-startupmedia/go-arrow/parquet/cmd/parquet_schema@latest
+//	go get -u github.com/nidhhoggr/go-arrow/parquet
+//	go install github.com/nidhhoggr/go-arrow/parquet/cmd/parquet_reader@latest
+//	go install github.com/nidhhoggr/go-arrow/parquet/cmd/parquet_schema@latest
 //
 // # Modules
 //

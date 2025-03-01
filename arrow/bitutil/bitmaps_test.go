@@ -22,8 +22,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/bitutil"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/arrow/bitutil"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )

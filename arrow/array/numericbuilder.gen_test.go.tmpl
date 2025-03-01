@@ -19,9 +19,9 @@ package array_test
 import (
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -281,8 +281,8 @@ func Test{{.Name}}BuilderUnmarshalJSON(t *testing.T) {
 
 	jsonstr := `[0, 1, "+Inf", 2, 3, "NaN", "NaN", 4, 5, "-Inf"]`
 
-	err := bldr.UnmarshalJSON([]byte(jsonstr))
-	assert.NoError(t, err)
+	Err := bldr.UnmarshalJSON([]byte(jsonstr))
+	assert.NoError(t, Err)
 
 	arr := bldr.New{{.Name}}Array()
 	defer arr.Release()

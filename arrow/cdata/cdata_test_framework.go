@@ -69,10 +69,10 @@ import (
 	"runtime/cgo"
 	"unsafe"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory/mallocator"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/internal"
+	"github.com/nidhhoggr/go-arrow/arrow/memory/mallocator"
 )
 
 const (

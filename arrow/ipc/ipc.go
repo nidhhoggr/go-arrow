@@ -19,10 +19,10 @@ package ipc
 import (
 	"io"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/arrio"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/flatbuf"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/arrio"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/flatbuf"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
 )
 
 const (

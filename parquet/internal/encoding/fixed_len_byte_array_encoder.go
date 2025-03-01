@@ -19,9 +19,9 @@ package encoding
 import (
 	"fmt"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/internal/bitutils"
-	"github.com/joe-at-startupmedia/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/internal/bitutils"
+	"github.com/nidhhoggr/go-arrow/parquet"
 )
 
 // PlainFixedLenByteArrayEncoder writes the raw bytes of the byte array

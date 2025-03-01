@@ -21,7 +21,7 @@ package kernels
 import (
 	"unsafe"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow"
 	"golang.org/x/sys/cpu"
 )
 

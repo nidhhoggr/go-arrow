@@ -20,7 +20,7 @@ import (
 	"sync/atomic"
 	"unsafe"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/debug"
 )
 
 // #include "arrow/c/helpers.h"

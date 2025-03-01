@@ -28,7 +28,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/joe-at-startupmedia/go-arrow/internal/json"
+	"github.com/nidhhoggr/go-arrow/internal/json"
 )
 
 const Ext = ".tmpl"

@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
-	"github.com/joe-at-startupmedia/go-arrow/internal/utils"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/internal/utils"
 )
 
 // ReaderProperties are used to define how the file reader will handle buffering and allocating buffers

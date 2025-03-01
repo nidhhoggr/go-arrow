@@ -19,13 +19,13 @@ package metadata
 import (
   "fmt"
 
-  "github.com/joe-at-startupmedia/go-arrow/arrow"
-  "github.com/joe-at-startupmedia/go-arrow/parquet"
-  "github.com/joe-at-startupmedia/go-arrow/parquet/schema"
-  "github.com/joe-at-startupmedia/go-arrow/parquet/internal/utils"
-  shared_utils "github.com/joe-at-startupmedia/go-arrow/internal/utils"
-  "github.com/joe-at-startupmedia/go-arrow/parquet/internal/encoding"
-  "github.com/joe-at-startupmedia/go-arrow/internal/bitutils"
+  "github.com/nidhhoggr/go-arrow/arrow"
+  "github.com/nidhhoggr/go-arrow/parquet"
+  "github.com/nidhhoggr/go-arrow/parquet/schema"
+  "github.com/nidhhoggr/go-arrow/parquet/internal/utils"
+  shared_utils "github.com/nidhhoggr/go-arrow/internal/utils"
+  "github.com/nidhhoggr/go-arrow/parquet/internal/encoding"
+  "github.com/nidhhoggr/go-arrow/internal/bitutils"
 )
 
 {{range .In}}
@@ -105,9 +105,9 @@ func (s *{{.Name}}Statistics) plainEncode(src {{.name}}) []byte {
   return out
 {{- else}}
   s.encoder.(encoding.{{if .logical}}{{.physical}}{{else}}{{.Name}}{{end}}Encoder).Put([]{{.name}}{src})
-  buf, err := s.encoder.FlushValues()
-  if err != nil {
-    panic(err) // recovered by Encode
+  buf, Err := s.encoder.FlushValues()
+  if Err != nil {
+    panic(Err) // recovered by Encode
   }
   defer buf.Release()
 
@@ -338,7 +338,7 @@ func (s *{{.Name}}Statistics) UpdateSpaced(values []{{.name}}, validBits []byte,
   s.SetMinMax(s.getMinMaxSpaced(values, validBits, validBitsOffset))
 }
 
-func (s *{{.Name}}Statistics) UpdateFromArrow(values arrow.Array, updateCounts bool) error {
+func (s *{{.Name}}Statistics) UpdateFromArrow(values arrow.Array, updateCounts bool) Err {
   if updateCounts {
     s.IncNulls(int64(values.NullN()))
     s.nvalues += int64(values.Len() - values.NullN())
@@ -461,10 +461,10 @@ func (s *{{.Name}}Statistics) EncodeMax() []byte{
 }
 
 // Encode returns a populated EncodedStatistics object
-func (s *{{.Name}}Statistics) Encode() (enc EncodedStatistics, err error) {
+func (s *{{.Name}}Statistics) Encode() (enc EncodedStatistics, Err Err) {
   defer func() {
     if r := recover(); r != nil {
-      err = shared_utils.FormatRecoveredError("unknown error type thrown from panic", r)
+      Err = shared_utils.FormatRecoveredError("unknown Err type thrown from panic", r)
     }
   }()
   if s.HasMinMax() {

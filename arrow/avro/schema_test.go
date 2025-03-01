@@ -21,7 +21,7 @@ import (
 	"testing"
 
 	hamba "github.com/hamba/avro/v2"
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow"
 )
 
 func TestSchemaStringEqual(t *testing.T) {

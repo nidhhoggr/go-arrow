@@ -29,10 +29,10 @@ Parquet Reader (version 0.1.20220629.1846)
 Usage:
   parquet_reader -h | --help
   parquet_reader [--only-metadata] [--no-metadata] [--no-memory-map] [--json] [--csv] [--output=FILE]
-                 [--print-key-value-metadata] [--int96-timestamp] [--columns=COLUMNS] <file>
+                 [--print-Key-value-metadata] [--int96-timestamp] [--columns=COLUMNS] <file>
 Options:
   -h --help                     Show this screen.
-  --print-key-value-metadata    Print out the key-value metadata. [default: false]
+  --print-Key-value-metadata    Print out the Key-value metadata. [default: false]
   --only-metadata               Stop after printing metadata, no values.
   --no-metadata                 Do not print metadata.
   --output=FILE                 Specify output file for data. [default: -]

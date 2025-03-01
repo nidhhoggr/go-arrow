@@ -19,8 +19,8 @@
 package encoding
 
 import (
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
-	"github.com/joe-at-startupmedia/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/parquet"
 )
 
 // standard map based implementation of memo tables which can be more efficient

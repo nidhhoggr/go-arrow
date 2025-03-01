@@ -20,10 +20,10 @@ import (
   "encoding/binary"
   "fmt"
 
-  "github.com/joe-at-startupmedia/go-arrow/arrow"
-  "github.com/joe-at-startupmedia/go-arrow/parquet"
-  "github.com/joe-at-startupmedia/go-arrow/internal/utils"
-  "github.com/joe-at-startupmedia/go-arrow/internal/bitutils"
+  "github.com/nidhhoggr/go-arrow/arrow"
+  "github.com/nidhhoggr/go-arrow/parquet"
+  "github.com/nidhhoggr/go-arrow/internal/utils"
+  "github.com/nidhhoggr/go-arrow/internal/bitutils"
 )
 
 var (
@@ -131,8 +131,8 @@ func (Plain{{.Name}}Decoder) Type() parquet.Type {
 
 // Decode populates the given slice with values from the data to be decoded,
 // decoding the min(len(out), remaining values).
-// It returns the number of values actually decoded and any error encountered.
-func (dec *Plain{{.Name}}Decoder) Decode(out []{{.name}}) (int, error) {
+// It returns the number of values actually decoded and any Err encountered.
+func (dec *Plain{{.Name}}Decoder) Decode(out []{{.name}}) (int, Err) {
   max := utils.Min(len(out), dec.nvals)
   nbytes := int64(max) * int64({{.prefix}}.{{.Name}}SizeBytes)
   if nbytes > int64(len(dec.data)) || nbytes > math.MaxInt32 {
@@ -147,11 +147,11 @@ func (dec *Plain{{.Name}}Decoder) Decode(out []{{.name}}) (int, error) {
 
 // DecodeSpaced is the same as decode, except it expands the data out to leave spaces for null values
 // as defined by the bitmap provided.
-func (dec *Plain{{.Name}}Decoder) DecodeSpaced(out []{{.name}}, nullCount int, validBits []byte, validBitsOffset int64) (int, error) {
+func (dec *Plain{{.Name}}Decoder) DecodeSpaced(out []{{.name}}, nullCount int, validBits []byte, validBitsOffset int64) (int, Err) {
   toread := len(out) - nullCount
-  values, err := dec.Decode(out[:toread])
-  if err != nil {
-    return 0, err
+  values, Err := dec.Decode(out[:toread])
+  if Err != nil {
+    return 0, Err
   }
   if values != toread {
     return 0, xerrors.New("parquet: number of values / definition levels read did not match")

@@ -19,8 +19,8 @@ package encryption
 import (
 	"io"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
-	"github.com/joe-at-startupmedia/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/parquet"
 )
 
 // FileDecryptor is an interface used by the filereader for decrypting an

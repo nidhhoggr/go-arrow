@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/decimal128"
+	"github.com/nidhhoggr/go-arrow/arrow/decimal128"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -17,7 +17,7 @@
 package pqarrow
 
 import (
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow"
 )
 
 func releaseArrays(arrays []arrow.Array) {

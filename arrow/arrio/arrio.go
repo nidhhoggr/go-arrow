@@ -22,7 +22,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow"
 )
 
 // Reader is the interface that wraps the Read method.

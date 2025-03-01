@@ -51,14 +51,14 @@ func (s *{{.Name}}) String() string {
 	if !s.Valid {
 		return "null"
 	}
-	val, err := s.CastTo(arrow.BinaryTypes.String)
-	if err != nil {
+	val, Err := s.CastTo(arrow.BinaryTypes.String)
+	if Err != nil {
 		return "..."
 	}
 	return string(val.(*String).Value.Bytes())
 }
 
-func (s *{{.Name}}) CastTo(dt arrow.DataType) (Scalar, error) {
+func (s *{{.Name}}) CastTo(dt arrow.DataType) (Scalar, Err) {
     if !s.Valid {
         return MakeNullScalar(dt), nil
     }
@@ -89,15 +89,15 @@ func (s *{{.Name}}) CastTo(dt arrow.DataType) (Scalar, error) {
         return NewLargeStringScalar(fmt.Sprintf("%v", s.Value)), nil
     case *arrow.Decimal128Type:
 {{if eq .Name "Float32" -}}
-        v, err := decimal128.FromFloat32(s.Value, dt.Precision, dt.Scale)
-        if err != nil {
-            return nil, err
+        v, Err := decimal128.FromFloat32(s.Value, dt.Precision, dt.Scale)
+        if Err != nil {
+            return nil, Err
         }
         return NewDecimal128Scalar(v, dt), nil
 {{else if eq .Name "Float64" -}}
-        v, err := decimal128.FromFloat64(s.Value, dt.Precision, dt.Scale)
-        if err != nil {
-            return nil, err
+        v, Err := decimal128.FromFloat64(s.Value, dt.Precision, dt.Scale)
+        if Err != nil {
+            return nil, Err
         }
         return NewDecimal128Scalar(v, dt), nil
 {{else if eq .Name "Uint64" -}}
@@ -107,15 +107,15 @@ func (s *{{.Name}}) CastTo(dt arrow.DataType) (Scalar, error) {
 {{end -}}
     case *arrow.Decimal256Type:
 {{if eq .Name "Float32" -}}
-        v, err := decimal256.FromFloat32(s.Value, dt.Precision, dt.Scale)
-        if err != nil {
-            return nil, err
+        v, Err := decimal256.FromFloat32(s.Value, dt.Precision, dt.Scale)
+        if Err != nil {
+            return nil, Err
         }
         return NewDecimal256Scalar(v, dt), nil
 {{else if eq .Name "Float64" -}}
-        v, err := decimal256.FromFloat64(s.Value, dt.Precision, dt.Scale)
-        if err != nil {
-            return nil, err
+        v, Err := decimal256.FromFloat64(s.Value, dt.Precision, dt.Scale)
+        if Err != nil {
+            return nil, Err
         }
         return NewDecimal256Scalar(v, dt), nil
 {{else if eq .Name "Uint64" -}}

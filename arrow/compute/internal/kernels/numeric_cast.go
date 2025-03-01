@@ -23,13 +23,13 @@ import (
 	"strconv"
 	"unsafe"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/bitutil"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/compute/exec"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/decimal128"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/decimal256"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
-	"github.com/joe-at-startupmedia/go-arrow/internal/bitutils"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/bitutil"
+	"github.com/nidhhoggr/go-arrow/arrow/compute/exec"
+	"github.com/nidhhoggr/go-arrow/arrow/decimal128"
+	"github.com/nidhhoggr/go-arrow/arrow/decimal256"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/debug"
+	"github.com/nidhhoggr/go-arrow/internal/bitutils"
 	"golang.org/x/exp/constraints"
 )
 

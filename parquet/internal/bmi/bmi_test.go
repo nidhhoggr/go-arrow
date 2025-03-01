@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/parquet/internal/bmi"
+	"github.com/nidhhoggr/go-arrow/parquet/internal/bmi"
 	"github.com/stretchr/testify/assert"
 )
 

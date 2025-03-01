@@ -24,11 +24,11 @@ import (
 	"math/bits"
 
 	"github.com/JohnCGriffin/overflow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/compute/exec"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/decimal128"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/decimal256"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/compute/exec"
+	"github.com/nidhhoggr/go-arrow/arrow/decimal128"
+	"github.com/nidhhoggr/go-arrow/arrow/decimal256"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/debug"
 	"golang.org/x/exp/constraints"
 )
 

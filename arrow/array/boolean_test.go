@@ -22,8 +22,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
 	"github.com/stretchr/testify/assert"
 )
 

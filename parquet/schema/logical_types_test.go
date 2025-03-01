@@ -19,9 +19,9 @@ package schema_test
 import (
 	"testing"
 
-	"github.com/apache/arrow/go/v18/internal/json"
-	"github.com/apache/arrow/go/v18/parquet"
-	"github.com/apache/arrow/go/v18/parquet/schema"
+	"github.com/nidhhoggr/go-arrow/internal/json"
+	"github.com/nidhhoggr/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet/schema"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -570,4 +570,3 @@ func TestNodeFactoryEquivalences(t *testing.T) {
 	assert.NoError(t, err)
 	assert.True(t, fromConverted.Equals(fromLogical))
 }
-                           

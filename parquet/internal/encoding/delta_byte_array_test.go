@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
-	"github.com/joe-at-startupmedia/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/parquet"
 	"github.com/stretchr/testify/assert"
 )
 

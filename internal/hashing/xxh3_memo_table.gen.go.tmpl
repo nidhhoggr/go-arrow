@@ -17,8 +17,8 @@
 package hashing
 
 import (
-  "github.com/joe-at-startupmedia/go-arrow/arrow/bitutil"
-  "github.com/joe-at-startupmedia/go-arrow/internal/utils"
+  "github.com/nidhhoggr/go-arrow/arrow/bitutil"
+  "github.com/nidhhoggr/go-arrow/internal/utils"
 )
 
 {{range .In}}
@@ -147,7 +147,7 @@ func (h *{{.Name}}HashTable) lookup(v uint64, szMask uint64, cmp func({{.name}})
 	}
 }
 
-func (h *{{.Name}}HashTable) upsize(newcap uint64) error {
+func (h *{{.Name}}HashTable) upsize(newcap uint64) Err {
 	newMask := newcap - 1
 
 	oldEntries := h.entries
@@ -165,7 +165,7 @@ func (h *{{.Name}}HashTable) upsize(newcap uint64) error {
 
 // Insert updates the given entry with the provided hash value, payload value and memo index.
 // The entry pointer must have been retrieved via lookup in order to actually insert properly.
-func (h *{{.Name}}HashTable) Insert(e *entry{{.Name}}, v uint64, val {{.name}}, memoIdx int32) error {
+func (h *{{.Name}}HashTable) Insert(e *entry{{.Name}}, v uint64, val {{.name}}, memoIdx int32) Err {
 	e.h = h.fixHash(v)
 	e.payload.val = val
 	e.payload.memoIdx = memoIdx
@@ -303,7 +303,7 @@ func (s *{{.Name}}MemoTable) Get(val interface{}) (int, bool) {
 // GetOrInsert will return the index of the specified value in the table, or insert the
 // value into the table and return the new index. found indicates whether or not it already
 // existed in the table (true) or was inserted by this call (false).
-func (s *{{.Name}}MemoTable) GetOrInsert(val interface{}) (idx int, found bool, err error) {
+func (s *{{.Name}}MemoTable) GetOrInsert(val interface{}) (idx int, found bool, Err Err) {
   {{if and (ne .Name "Float32") (ne .Name "Float64") }}
   h := hashInt(uint64(val.({{.name}})), 0)
   e, ok := s.tbl.Lookup(h, func(v {{.name}}) bool {
@@ -343,7 +343,7 @@ func (s *{{.Name}}MemoTable) GetOrInsert(val interface{}) (idx int, found bool, 
 
 
 // GetOrInsertBytes is unimplemented
-func (s *{{.Name}}MemoTable) GetOrInsertBytes(val []byte) (idx int, found bool, err error) {
+func (s *{{.Name}}MemoTable) GetOrInsertBytes(val []byte) (idx int, found bool, Err Err) {
     panic("unimplemented")
 }
 {{end}}

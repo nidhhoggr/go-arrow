@@ -63,8 +63,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/ipc"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/arrow/ipc"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
 )
 
 func main() {

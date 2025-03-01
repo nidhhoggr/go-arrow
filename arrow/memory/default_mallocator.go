@@ -19,7 +19,7 @@
 package memory
 
 import (
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory/mallocator"
+	"github.com/nidhhoggr/go-arrow/arrow/memory/mallocator"
 )
 
 // DefaultAllocator is a default implementation of Allocator and can be used anywhere

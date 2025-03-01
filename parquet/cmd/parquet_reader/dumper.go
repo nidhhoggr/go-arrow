@@ -22,9 +22,9 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/joe-at-startupmedia/go-arrow/parquet"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/file"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/schema"
+	"github.com/nidhhoggr/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet/file"
+	"github.com/nidhhoggr/go-arrow/parquet/schema"
 )
 
 const defaultBatchSize = 128

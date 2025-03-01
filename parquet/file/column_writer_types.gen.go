@@ -19,14 +19,14 @@
 package file
 
 import (
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
-	"github.com/joe-at-startupmedia/go-arrow/internal/utils"
-	"github.com/joe-at-startupmedia/go-arrow/parquet"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/internal/encoding"
-	format "github.com/joe-at-startupmedia/go-arrow/parquet/internal/gen-go/parquet"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/metadata"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/schema"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/internal/utils"
+	"github.com/nidhhoggr/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet/internal/encoding"
+	format "github.com/nidhhoggr/go-arrow/parquet/internal/gen-go/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet/metadata"
+	"github.com/nidhhoggr/go-arrow/parquet/schema"
 )
 
 // Int32ColumnChunkWriter is the typed interface for writing columns to a parquet

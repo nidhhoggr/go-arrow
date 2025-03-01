@@ -19,11 +19,11 @@ package file
 import (
     "fmt"
 
-    "github.com/joe-at-startupmedia/go-arrow/internal/utils"
-    "github.com/joe-at-startupmedia/go-arrow/parquet"
-    "github.com/joe-at-startupmedia/go-arrow/parquet/metadata"
-    "github.com/joe-at-startupmedia/go-arrow/parquet/internal/encoding"
-    format "github.com/joe-at-startupmedia/go-arrow/parquet/internal/gen-go/parquet"
+    "github.com/nidhhoggr/go-arrow/internal/utils"
+    "github.com/nidhhoggr/go-arrow/parquet"
+    "github.com/nidhhoggr/go-arrow/parquet/metadata"
+    "github.com/nidhhoggr/go-arrow/parquet/internal/encoding"
+    format "github.com/nidhhoggr/go-arrow/parquet/internal/gen-go/parquet"
 )
 
 {{range .In}}
@@ -67,10 +67,10 @@ func New{{.Name}}ColumnChunkWriter(meta *metadata.ColumnChunkMetaDataBuilder, pa
 // w.props.BatchSize begins and ends on a row boundary. As a consequence,
 // the first value to WriteBatch must always be the beginning of a row if
 // repLevels is not nil (repLevels[0] should always be 0) and using DataPageV2.
-func (w *{{.Name}}ColumnChunkWriter) WriteBatch(values []{{.name}}, defLevels, repLevels []int16) (valueOffset int64, err error) {
+func (w *{{.Name}}ColumnChunkWriter) WriteBatch(values []{{.name}}, defLevels, repLevels []int16) (valueOffset int64, Err Err) {
   defer func() {
     if r := recover(); r != nil {
-      err = utils.FormatRecoveredError("unknown error type", r)
+      Err = utils.FormatRecoveredError("unknown Err type", r)
     }
   }()
   // We check for DataPage limits only after we have inserted the values. If a user
@@ -94,8 +94,8 @@ func (w *{{.Name}}ColumnChunkWriter) WriteBatch(values []{{.name}}, defLevels, r
     }
 
     w.writeValues(vals, batch - toWrite)
-    if err := w.commitWriteAndCheckPageLimit(batch, toWrite); err != nil {
-        panic(err)
+    if Err := w.commitWriteAndCheckPageLimit(batch, toWrite); Err != nil {
+        panic(Err)
     }
 
     valueOffset += toWrite
@@ -146,10 +146,10 @@ func (w *{{.Name}}ColumnChunkWriter) WriteBatchSpaced(values []{{.name}}, defLev
   })
 }
 
-func (w *{{.Name}}ColumnChunkWriter) WriteDictIndices(indices arrow.Array, defLevels, repLevels []int16) (err error) {
+func (w *{{.Name}}ColumnChunkWriter) WriteDictIndices(indices arrow.Array, defLevels, repLevels []int16) (Err Err) {
   defer func() {
     if r := recover(); r != nil {
-      err = utils.FormatRecoveredError("unknown error type", r)
+      Err = utils.FormatRecoveredError("unknown Err type", r)
     }
   }()
 
@@ -170,12 +170,12 @@ func (w *{{.Name}}ColumnChunkWriter) WriteDictIndices(indices arrow.Array, defLe
     writeableIndices = w.maybeReplaceValidity(writeableIndices, info.nullCount)
     defer writeableIndices.Release()
 
-    if err := dictEncoder.PutIndices(writeableIndices); err != nil {
-      panic(err) // caught above
+    if Err := dictEncoder.PutIndices(writeableIndices); Err != nil {
+      panic(Err) // caught above
     }
 
-    if err := w.commitWriteAndCheckPageLimit(batch, info.batchNum); err != nil {
-      panic(err)
+    if Err := w.commitWriteAndCheckPageLimit(batch, info.batchNum); Err != nil {
+      panic(Err)
     }
 
     valueOffset += info.numSpaced()

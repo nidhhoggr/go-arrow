@@ -23,10 +23,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/parquet"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/compress"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/file"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/schema"
+	"github.com/nidhhoggr/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet/compress"
+	"github.com/nidhhoggr/go-arrow/parquet/file"
+	"github.com/nidhhoggr/go-arrow/parquet/schema"
 	"github.com/stretchr/testify/suite"
 )
 

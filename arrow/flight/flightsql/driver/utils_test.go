@@ -22,12 +22,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/decimal128"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/decimal256"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/float16"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/decimal128"
+	"github.com/nidhhoggr/go-arrow/arrow/decimal256"
+	"github.com/nidhhoggr/go-arrow/arrow/float16"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
 	"github.com/stretchr/testify/require"
 )
 

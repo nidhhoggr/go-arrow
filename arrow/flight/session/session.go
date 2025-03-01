@@ -36,7 +36,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/flight"
+	"github.com/nidhhoggr/go-arrow/arrow/flight"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/protobuf/proto"

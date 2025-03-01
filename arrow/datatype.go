@@ -21,7 +21,7 @@ import (
 	"hash/maphash"
 	"strings"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/debug"
 )
 
 // Type is a logical type. They can be expressed as

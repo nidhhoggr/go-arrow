@@ -21,9 +21,9 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/bitutil"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/endian"
-	"github.com/joe-at-startupmedia/go-arrow/internal/bitutils"
+	"github.com/nidhhoggr/go-arrow/arrow/bitutil"
+	"github.com/nidhhoggr/go-arrow/arrow/endian"
+	"github.com/nidhhoggr/go-arrow/internal/bitutils"
 	"github.com/stretchr/testify/assert"
 )
 

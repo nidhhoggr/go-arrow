@@ -16,7 +16,7 @@
 
 package arrow
 
-import "github.com/joe-at-startupmedia/go-arrow/internal/json"
+import "github.com/nidhhoggr/go-arrow/internal/json"
 
 // Record is a collection of equal-length arrays matching a particular Schema.
 // Also known as a RecordBatch in the spec and in some implementations.

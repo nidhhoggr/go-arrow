@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/apache/arrow/go/v18/internal/json"
-	"github.com/apache/arrow/go/v18/parquet"
-	"github.com/apache/arrow/go/v18/parquet/internal/debug"
-	format "github.com/apache/arrow/go/v18/parquet/internal/gen-go/parquet"
+	"github.com/nidhhoggr/go-arrow/internal/json"
+	"github.com/nidhhoggr/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet/internal/debug"
+	format "github.com/nidhhoggr/go-arrow/parquet/internal/gen-go/parquet"
 )
 
 // DecimalMetadata is a struct for managing scale and precision information between
@@ -1190,4 +1190,3 @@ func (NoLogicalType) Equals(rhs LogicalType) bool {
 }
 
 func (NoLogicalType) IsNone() bool { return true }
-                                    

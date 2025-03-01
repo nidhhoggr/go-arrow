@@ -21,10 +21,10 @@ import (
 	"testing"
 
 	"github.com/apache/thrift/lib/go/thrift"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/file"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/internal/encoding"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/schema"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/parquet/file"
+	"github.com/nidhhoggr/go-arrow/parquet/internal/encoding"
+	"github.com/nidhhoggr/go-arrow/parquet/schema"
 	"github.com/stretchr/testify/assert"
 )
 

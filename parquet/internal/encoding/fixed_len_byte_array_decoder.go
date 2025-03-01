@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/joe-at-startupmedia/go-arrow/internal/utils"
-	"github.com/joe-at-startupmedia/go-arrow/parquet"
+	"github.com/nidhhoggr/go-arrow/internal/utils"
+	"github.com/nidhhoggr/go-arrow/parquet"
 	"golang.org/x/xerrors"
 )
 

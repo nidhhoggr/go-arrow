@@ -19,7 +19,7 @@ package arrow_test
 import (
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow"
 )
 
 func TestBinaryType(t *testing.T) {

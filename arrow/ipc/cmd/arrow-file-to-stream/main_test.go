@@ -21,8 +21,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/arrdata"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/arrdata"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
 )
 
 func TestFileToStream(t *testing.T) {

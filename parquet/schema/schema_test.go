@@ -21,9 +21,9 @@ import (
 	"testing"
 
 	"github.com/apache/thrift/lib/go/thrift"
-	"github.com/joe-at-startupmedia/go-arrow/parquet"
-	format "github.com/joe-at-startupmedia/go-arrow/parquet/internal/gen-go/parquet"
-	"github.com/joe-at-startupmedia/go-arrow/parquet/schema"
+	"github.com/nidhhoggr/go-arrow/parquet"
+	format "github.com/nidhhoggr/go-arrow/parquet/internal/gen-go/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet/schema"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )

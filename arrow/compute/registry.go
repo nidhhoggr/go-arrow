@@ -21,7 +21,7 @@ package compute
 import (
 	"sync"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/debug"
 	"golang.org/x/exp/maps"
 	"golang.org/x/exp/slices"
 )

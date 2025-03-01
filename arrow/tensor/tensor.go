@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/internal/debug"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/internal/debug"
 )
 
 // Interface represents an n-dimensional array of numerical data.

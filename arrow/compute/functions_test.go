@@ -21,8 +21,8 @@ package compute_test
 import (
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/compute"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/compute"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

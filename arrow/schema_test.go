@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow/endian"
+	"github.com/nidhhoggr/go-arrow/arrow/endian"
 	"github.com/stretchr/testify/assert"
 )
 

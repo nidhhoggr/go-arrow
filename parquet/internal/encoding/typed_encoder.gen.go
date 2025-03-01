@@ -22,15 +22,15 @@ import (
 	"fmt"
 	"unsafe"
 
-	"github.com/apache/arrow/go/v18/arrow"
-	"github.com/apache/arrow/go/v18/arrow/array"
-	"github.com/apache/arrow/go/v18/arrow/memory"
-	"github.com/apache/arrow/go/v18/internal/bitutils"
-	shared_utils "github.com/apache/arrow/go/v18/internal/utils"
-	"github.com/apache/arrow/go/v18/parquet"
-	format "github.com/apache/arrow/go/v18/parquet/internal/gen-go/parquet"
-	"github.com/apache/arrow/go/v18/parquet/internal/utils"
-	"github.com/apache/arrow/go/v18/parquet/schema"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/internal/bitutils"
+	shared_utils "github.com/nidhhoggr/go-arrow/internal/utils"
+	"github.com/nidhhoggr/go-arrow/parquet"
+	format "github.com/nidhhoggr/go-arrow/parquet/internal/gen-go/parquet"
+	"github.com/nidhhoggr/go-arrow/parquet/internal/utils"
+	"github.com/nidhhoggr/go-arrow/parquet/schema"
 	"golang.org/x/xerrors"
 )
 
@@ -1733,4 +1733,3 @@ func getDecodingTraits(t parquet.Type) DecoderTraits {
 		return nil
 	}
 }
-                                                                                 

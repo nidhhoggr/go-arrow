@@ -21,9 +21,9 @@ package compute
 import (
 	"fmt"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/scalar"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/scalar"
 )
 
 //go:generate go run golang.org/x/tools/cmd/stringer -type=DatumKind -linecomment

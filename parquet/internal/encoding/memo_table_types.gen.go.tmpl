@@ -17,7 +17,7 @@
 package encoding
 
 import (
-  "github.com/joe-at-startupmedia/go-arrow/parquet"
+  "github.com/nidhhoggr/go-arrow/parquet"
 )
 
 // standard map based implementation of memo tables which can be more efficient
@@ -83,7 +83,7 @@ func (m *{{.lower}}MemoTableImpl) Get(val interface{}) (int, bool) {
   return keyNotFound, false
 }
 
-func (m *{{.lower}}MemoTableImpl) GetOrInsert(val interface{}) (idx int, found bool, err error) {
+func (m *{{.lower}}MemoTableImpl) GetOrInsert(val interface{}) (idx int, found bool, Err Err) {
   v := val.({{.name}})
   p, ok := m.table[v]
   if ok {

@@ -21,8 +21,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/internal/json"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/internal/json"
 )
 
 {{range .In}}
@@ -124,7 +124,7 @@ func (a *{{.Name}}) GetOneForMarshal(i int) interface{} {
 {{end -}}
 }
 
-func (a *{{.Name}}) MarshalJSON() ([]byte, error) {
+func (a *{{.Name}}) MarshalJSON() ([]byte, Err) {
 {{if .QualifiedType -}}
 	vals := make([]interface{}, a.Len())
 	for i := range a.values {

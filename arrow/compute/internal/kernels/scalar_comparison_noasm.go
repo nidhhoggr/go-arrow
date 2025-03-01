@@ -18,7 +18,7 @@
 
 package kernels
 
-import "github.com/joe-at-startupmedia/go-arrow/arrow"
+import "github.com/nidhhoggr/go-arrow/arrow"
 
 func genCompareKernel[T arrow.NumericType](op CompareOperator) *CompareData {
 	return genGoCompareKernel(getCmpOp[T](op))

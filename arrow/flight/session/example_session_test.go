@@ -20,9 +20,9 @@ import (
 	"log"
 
 	"github.com/google/uuid"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/flight"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/flight/flightsql"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/flight/session"
+	"github.com/nidhhoggr/go-arrow/arrow/flight"
+	"github.com/nidhhoggr/go-arrow/arrow/flight/flightsql"
+	"github.com/nidhhoggr/go-arrow/arrow/flight/session"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

@@ -34,13 +34,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/joe-at-startupmedia/go-arrow/arrow"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/array"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/flight"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/flight/flightsql"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/flight/flightsql/driver"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/flight/flightsql/example"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/memory"
+	"github.com/nidhhoggr/go-arrow/arrow"
+	"github.com/nidhhoggr/go-arrow/arrow/array"
+	"github.com/nidhhoggr/go-arrow/arrow/flight"
+	"github.com/nidhhoggr/go-arrow/arrow/flight/flightsql"
+	"github.com/nidhhoggr/go-arrow/arrow/flight/flightsql/driver"
+	"github.com/nidhhoggr/go-arrow/arrow/flight/flightsql/example"
+	"github.com/nidhhoggr/go-arrow/arrow/memory"
 )
 
 const defaultTableName = "drivertest"

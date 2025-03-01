@@ -23,7 +23,7 @@ import (
 	"sync"
 
 	"github.com/google/uuid"
-	"github.com/joe-at-startupmedia/go-arrow/arrow/flight"
+	"github.com/nidhhoggr/go-arrow/arrow/flight"
 )
 
 const StatefulSessionCookieName string = "arrow_flight_session_id"
